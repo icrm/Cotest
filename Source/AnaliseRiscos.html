@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="pt-BR">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="pt-BR">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="pt-BR">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="pt-BR">
+    <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8"/>        
+        <meta name="viewport" content="width=device-width" />
+        <meta name="google-site-verification" content="qw2PPugOCEzY0WpTBowdSmFIlfLEJbw1OSrPSCXRHhs" />
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <meta name="author" content="IDiT Tecnologia" />
+        <meta name="keywords" content="coworking, escritï¿½rio virtual, escritï¿½rio compartilhado, colaborativo, link2u"/>
+        <meta name="description" content="Entre em contato agora mesmo e garanta a sua mesa num espaço moderno, agradável e cheio de gente bacana."/>
+
+        <title>Contato - An&aacute;lise de Riscos | Cotest Consultoria</title>
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="screen" />
+
+    </head>
+    <body>
+        <div id="all">
+            <div id="header">
+                <div id="header-sect">
+                </div>
+            </div>
+
+            <div id="content">
+                <div id="content-header">
+                    <h1>Entre em contato</h1>
+                </div>
+                <div style="display: block;">
+                    <div class="empresa-container right" style="width: 850px; padding:0">
+                        <h3 class="inner">An&aacute;lise de Riscos (estudo) - Norma P4.261 / 2003 Cetesb</h3>
+                        <p class="content inner">
+                        </p>
+                        <form method="post" action="mail_AnaliseRiscos.php" id="contactForm" enctype="multipart/form-data">
+                            <fieldset style="margin-bottom: 5px;">
+                                <legend>Dados</legend>
+
+                                <div id="messages"></div>
+                                <div class="formRow">
+                                    <div style="float: left;">
+                                        <label for="nome">* Nome:</label><br />
+                                        <input type="text" name="nome" id="nome" value="" />
+                                    </div>
+                                    <div style="margin-left: 310px;">
+                                        <label for="empresa">* Empresa:</label><br />
+                                        <input type="text" name="empresa" id="empresa" value=""/>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div style="float: left;">
+                                        <label for="email">* E-mail:</label><br />
+                                        <input type="text" name="email" id="email" value="" /><br />
+                                    </div>
+                                    <div style="margin-left: 310px;">
+                                        <label for="fone">Telefone:</label><br />
+                                        <input type="text" name="fone" id="fone" value="" title="(__) ____-____" style="width: 115px;" /><br />
+                                        <label>&nbsp;</label>
+                                        <span class="help">(ex.: (11) 1234-5678)</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <legend>An&aacute;lise de Riscos</legend>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Desenhos / Plantas (Dispon&iacute;veis): </label>
+                                        <input type="radio" name="aarp" id="aarpsim" value="Sim"/>
+                                        <label for="aarpsim">Sim</label>
+                                        <input type="radio" name="aarp" id="aarpnao" value="N&atilde;o"/>
+                                        <label for="aarpnao">N&atilde;o</label>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Área Total (m2): </label>
+                                        <input type="text" name="area_total_ar" id="area_total_ar" value="" style="width: 140px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Dist&acirc;ncia Popula&ccedil;&atilde;o (externa): </label>
+                                        <input type="text" name="dist_pop_ar" id="dist_pop_ar" value="" style="width: 250px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Produto Inflam&aacute;vel (principal): </label>
+                                        <input type="text" name="prod_infl_ar" id="prod_infl_ar" value="" style="width: 250px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Produto T&oacute;xico (principal): </label>
+                                        <input type="text" name="prod_tox_ar" id="prod_tox_ar" value="" style="width: 250px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach1" id="attach1" value=""/>
+                                        <label for="attach1"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Enviar" class="send-form" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div style="display: none;">
+                <div id="inline_content">
+                    <h3 class="inner">_Obrigado</h3>
+                    Sua mensagem foi enviada com sucesso. <br />
+                    Logo entraremos em contato!
+                </div>
+            </div>
+        </div>
+    </body>    
+</html>

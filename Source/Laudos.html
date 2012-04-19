@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="pt-BR">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="pt-BR">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="pt-BR">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="pt-BR">
+    <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8"/>        
+        <meta name="viewport" content="width=device-width" />
+        <meta name="google-site-verification" content="qw2PPugOCEzY0WpTBowdSmFIlfLEJbw1OSrPSCXRHhs" />
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <meta name="author" content="IDiT Tecnologia" />
+        <meta name="keywords" content="coworking, escritï¿½rio virtual, escritï¿½rio compartilhado, colaborativo, link2u"/>
+        <meta name="description" content="Entre em contato agora mesmo e garanta a sua mesa num espaço moderno, agradável e cheio de gente bacana."/>
+
+        <title>Contato - Laudos | Cotest Consultoria</title>
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="screen" />
+
+    </head>
+    <body>
+        <div id="all">
+            <div id="header">
+                <div id="header-sect">
+                </div>
+            </div>
+
+            <div id="content">
+                <div id="content-header">
+                    <h1>Entre em contato</h1>
+                </div>
+                <div style="display: block;">
+                    <div class="empresa-container right" style="width: 850px; padding:0">
+                        <h3 class="inner">Laudos</h3>
+                        <p class="content inner">
+                        </p>
+                        <form method="post" action="mail_Laudos.php" id="contactForm" enctype="multipart/form-data">
+                            <fieldset style="margin-bottom: 5px;">
+                                <legend>Dados</legend>
+
+                                <div id="messages"></div>
+                                <div class="formRow">
+                                    <div style="float: left;">
+                                        <label for="nome">* Nome:</label><br />
+                                        <input type="text" name="nome" id="nome" value="" />
+                                    </div>
+                                    <div style="margin-left: 310px;">
+                                        <label for="empresa">* Empresa:</label><br />
+                                        <input type="text" name="empresa" id="empresa" value=""/>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div style="float: left;">
+                                        <label for="email">* E-mail:</label><br />
+                                        <input type="text" name="email" id="email" value="" /><br />
+                                    </div>
+                                    <div style="margin-left: 310px;">
+                                        <label for="fone">Telefone:</label><br />
+                                        <input type="text" name="fone" id="fone" value="" title="(__) ____-____" style="width: 115px;" /><br />
+                                        <label>&nbsp;</label>
+                                        <span class="help">(ex.: (11) 1234-5678)</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <legend>Insalubridade</legend>
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Agente Qu&iacute;mico</label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <input type="radio" name="agente_quimico" id="poeira" value="Poeira"/>
+                                            <label for="poeira">Poeira</label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <input type="radio" name="agente_quimico" id="gases" value="Gases / Vapores"/>
+                                            <label for="gases">Gases / Vapores</label>
+                                        </span>
+                                        <label for="aqoutros">Outros:</label>
+                                        <input type="text" name="aqoutros" id="aqoutros" value="" style="width: 255px;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Subst&acirc;ncia</label>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="subs1">1</label>
+                                            <input type="text" name="subs1" id="subs1" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="subs2">2</label>
+                                            <input type="text" name="subs2" id="subs2" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="subs3">3</label>
+                                            <input type="text" name="subs3" id="subs3" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="subs4">4</label>
+                                            <input type="text" name="subs4" id="subs4" value="" style="width: 140px;"/>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Fun&ccedil;&otilde;es</label>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="qfunc1">1</label>
+                                            <input type="text" name="qfunc1" id="qfunc1" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="qfunc2">2</label>
+                                            <input type="text" name="qfunc2" id="qfunc2" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="qfunc3">3</label>
+                                            <input type="text" name="qfunc3" id="qfunc3" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="qfunc4">4</label>
+                                            <input type="text" name="qfunc4" id="qfunc4" value="" style="width: 140px;"/>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Total de Trabalhadores</label>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="qtott1">1</label>
+                                            <input type="text" name="qtott1" id="qtott1" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="qtott2">2</label>
+                                            <input type="text" name="qtott2" id="qtott2" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="qtott3">3</label>
+                                            <input type="text" name="qtott3" id="qtott3" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="qtott4">4</label>
+                                            <input type="text" name="qtott4" id="qtott4" value="" style="width: 140px;"/>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach1" id="attach1" value=""/>
+                                        <label for="attach1"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <legend>Insalubridade</legend>
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Agente F&iacute;sico</label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <input type="radio" name="agente_fisico" id="ruido" value="Ru&iacute;do"/>
+                                            <label for="ruido">Ru&iacute;do</label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <input type="radio" name="agente_fisico" id="calor" value="Calor"/>
+                                            <label for="calor">Calor</label>
+                                        </span>
+                                        <label for="afoutros">Outros:</label>
+                                        <input type="text" name="afoutros" id="afoutros" value="" style="width: 255px;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Fun&ccedil;&otilde;es</label>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ffunc1">1</label>
+                                            <input type="text" name="ffunc1" id="ffunc1" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ffunc2">2</label>
+                                            <input type="text" name="ffunc2" id="ffunc2" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ffunc3">3</label>
+                                            <input type="text" name="ffunc3" id="ffunc3" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ffunc4">4</label>
+                                            <input type="text" name="ffunc4" id="ffunc4" value="" style="width: 140px;"/>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Total de Trabalhadores</label>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ftott1">1</label>
+                                            <input type="text" name="ftott1" id="ftott1" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ftott2">2</label>
+                                            <input type="text" name="ftott2" id="ftott2" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ftott3">3</label>
+                                            <input type="text" name="ftott3" id="ftott3" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ftott4">4</label>
+                                            <input type="text" name="ftott4" id="ftott4" value="" style="width: 140px;"/>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach2" id="attach2" value=""/>
+                                        <label for="attach2"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <legend>Periculosidade</legend>
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>&nbsp;</label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <input type="radio" name="periculosidade" id="explosivos" value="Explosivos"/>
+                                            <label for="explosivos">Explosivos</label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <input type="radio" name="periculosidade" id="inflamaveis" value="Inflam&aacute;veis"/>
+                                            <label for="inflamaveis">Inflam&aacute;veis</label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <input type="radio" name="periculosidade" id="eletricidade" value="Eletricidade"/>
+                                            <label for="eletricidade">Eletricidade</label>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Fun&ccedil;&otilde;es</label>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="pfunc1">1</label>
+                                            <input type="text" name="pfunc1" id="pfunc1" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="pfunc2">2</label>
+                                            <input type="text" name="pfunc2" id="pfunc2" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="pfunc3">3</label>
+                                            <input type="text" name="pfunc3" id="pfunc3" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="pfunc4">4</label>
+                                            <input type="text" name="pfunc4" id="pfunc4" value="" style="width: 140px;"/>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Total de Trabalhadores</label>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ptott1">1</label>
+                                            <input type="text" name="ptott1" id="ptott1" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ptott2">2</label>
+                                            <input type="text" name="ptott2" id="ptott2" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ptott3">3</label>
+                                            <input type="text" name="ptott3" id="ptott3" value="" style="width: 140px;"/>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="ptott4">4</label>
+                                            <input type="text" name="ptott4" id="ptott4" value="" style="width: 140px;"/>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach3" id="attach3" value=""/>
+                                        <label for="attach3"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Enviar" class="send-form" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div style="display: none;">
+                <div id="inline_content">
+                    <h3 class="inner">_Obrigado</h3>
+                    Sua mensagem foi enviada com sucesso. <br />
+                    Logo entraremos em contato!
+                </div>
+            </div>
+        </div>
+    </body>    
+</html>
