@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="IDiT Tecnologia" />
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+        <title>Contest - Consultoria</title>
+
+        <!-- Included CSS Files -->
+        <link rel="stylesheet" href="resources/stylesheets/foundation.css">
+        <link rel="stylesheet" href="resources/stylesheets/app.css">
+
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="resources/stylesheets/ie.css">
+        <![endif]-->
+
+        <script src="resources/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div id="container" class="general-background">
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns line-header-two">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns header default-background">
+                    <div class="eight columns">
+                        <a href="index.html"><img src="resources/images/cotest/logo-cotest.png" /></a>
+                    </div>
+                    <div class="four columns">
+                        <h1 class="tel">(11) 6810-7267</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns default-background default-border">
+                    <div class="eleven columns centered"><br />
+                        <h3 class="inner">Treinamentos / Palestras</h3>
+                        <p class="content inner">
+                        </p>
+                        <form method="post" action="mail_TreinamentoPalestra.php" id="contactForm" enctype="multipart/form-data" class="custom nice">
+                            <fieldset>
+                                <h5>Dados</h5>
+
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="nome">* Nome:</label><br />
+                                        <input type="text" name="nome" id="nome" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="empresa">* Empresa:</label><br />
+                                        <input type="text" name="empresa" id="empresa" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="email">* E-mail:</label>
+                                        <input type="text" name="email" id="email" value="" class="input-text" style="width: 350px;"/><br />
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="fone">Telefone:</label>
+                                        <input type="text" name="fone" id="fone" value="" title="(__) ____-____" style="width: 140px;" class="input-text" style="width: 350px;"/><br />
+                                        <span class="help">(ex.: (11) 1234-5678)</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 5px;">
+                                <h5>Treinamento</h5>
+                                <div class="row">
+                                    <div class="four columns">
+
+                                        <label for="epi">
+                                            <input type="radio" name="treinamento" id="epi" value="EPI" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;EPI
+                                        </label>
+
+                                        <label for="pca">
+                                            <input type="radio" name="treinamento" id="pca" value="PCA" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;PCA
+                                        </label>
+
+                                        <label for="ppr">
+                                            <input type="radio" name="treinamento" id="ppr" value="PPR" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;PPR
+                                        </label>
+
+                                        <label for="cipa">
+                                            <input type="radio" name="treinamento" id="cipa" value="CIPA" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;CIPA
+                                        </label>
+
+                                    </div>
+                                    <div class="eight columns">
+
+                                        <label for="preinc">
+                                            <input type="radio" name="treinamento" id="preinc" value="Prevenção de Incêndio" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Prevenção de Incêndio
+                                        </label>
+
+                                        <label for="espcon">
+                                            <input type="radio" name="treinamento" id="espcon" value="Espaço Confinado" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Espaço Confinado
+                                        </label>
+
+                                        <label for="anaris">
+                                            <input type="radio" name="treinamento" id="anaris" value="Análise de Risco" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Análise de Risco
+                                        </label>
+
+                                        <label for="prisoc">
+                                            <input type="radio" name="treinamento" id="prisoc" value="Primeiros Socorros" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Primeiros Socorros
+                                        </label>
+
+                                        <label for="altura">
+                                            <input type="radio" name="treinamento" id="altura" value="Altura" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Altura
+                                        </label>
+
+                                    </div>
+                                    <div>
+                                        <label for="toutros">Outros:</label>
+                                        <input type="text" name="toutros" id="toutros" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="tcarga_horaria">Total da Carga Horária:</label><br />
+                                        <input type="text" name="tcarga_horaria" id="tcarga_horaria" value="" class="input-text" style="width: 350px;" /><br />
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="ttotal_participantes">Total de Participantes:</label><br />
+                                        <input type="text" name="ttotal_participantes" id="ttotal_participantes" value="" class="input-text" style="width: 350px;" /><br />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="tsemana">
+                                        <input type="radio" name="tdata" id="tsemana" value="Durante a Semana" style="display: none;"/>
+                                        <span class="custom radio"></span>&nbsp;Durante a Semana
+                                    </label>
+                                    <label for="tfim_semana">
+                                        <input type="radio" name="tdata" id="tfim_semana" value="Final de Semana" style="display: none;"/>
+                                        <span class="custom radio"></span>&nbsp;Final de Semana
+                                    </label>
+                                    <label for="tdiurno">
+                                        <input type="radio" name="tperiodo" id="tdiurno" value="Diurno" style="display: none;"/>
+                                        <span class="custom radio"></span>&nbsp;Diurno
+                                    </label>
+                                    <label for="tnoturno">
+                                        <input type="radio" name="tperiodo" id="tnoturno" value="Noturno" style="display: none;"/>
+                                        <span class="custom radio"></span>&nbsp;Noturno
+                                    </label>
+
+                                    <input type="checkbox" name="tanexar" id="tanexar" value=""/>
+                                    <label for="tanexar">Arquivo (Anexar)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Palestras</h5>
+                                <div class="row">
+                                    <div class="twelve columns">
+                                        <h6 style="margin: 10px 0;">Segurança do Trabalho</h6>
+                                        <label for="preaci">
+                                            <input type="radio" name="seguranca_trabalho" id="preaci" value="Prevenção de Acidentes" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Prevenção de Acidentes
+                                        </label>
+                                        <label for="ordlim">
+                                            <input type="radio" name="seguranca_trabalho" id="ordlim" value="Ordem e Limpeza" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Ordem e Limpeza
+                                        </label>
+                                        <label for="alcdro">
+                                            <input type="radio" name="seguranca_trabalho" id="alcdro" value="Álcool e Drogas" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Álcool e Drogas
+                                        </label>
+
+                                        <label for="psoutros">Outros:</label>
+                                        <input type="text" name="psoutros" id="psoutros" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="twelve">
+                                        <h6 style="margin: 10px 0;">Meio Ambiente</h6>
+                                        <label for="solo">
+                                            <input type="radio" name="meio_ambiente" id="solo" value="Solo" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Solo
+                                        </label>
+                                        <label for="agua">
+                                            <input type="radio" name="meio_ambiente" id="agua" value="Água" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Água
+                                        </label>
+                                        <label for="residuo">
+                                            <input type="radio" name="meio_ambiente" id="residuo" value="Resíduo" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Resíduo
+                                        </label>
+
+                                        <label for="pmoutros">Outros:</label>
+                                        <input type="text" name="pmoutros" id="pmoutros" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <label for="ptotal_participantes">Total de Participantes:</label>
+                                        <input type="text" name="ptotal_participantes" id="ptotal_participantes" value="" class="input-text" style="width: 350px;"/><br />
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label for="psemana">
+                                                <input type="radio" name="pdata" id="psemana" value="Durante a Semana" style="display: none;"/>
+                                                <span class="custom radio"></span>&nbsp;Durante a Semana
+                                            </label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <label for="pfim_semana">
+                                                <input type="radio" name="pdata" id="pfim_semana" value="Final de Semana" style="display: none;"/>
+                                                <span class="custom radio"></span>&nbsp;Final de Semana
+                                            </label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <label for="pdiurno">
+                                                <input type="radio" name="pperiodo" id="pdiurno" value="Diurno" style="display: none;"/>
+                                                <span class="custom radio"></span>&nbsp;Diurno
+                                            </label>
+                                        </span>
+                                        <span class="radio-label">
+                                            <label for="pnoturno">
+                                                <input type="radio" name="pperiodo" id="pnoturno" value="Noturno"/>
+                                                <span class="custom radio"></span>&nbsp;Noturno
+                                            </label>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div>
+                                        <input type="file" name="attach1" id="attach1" class="input-text" style="width: 350px;"/>
+                                        <label for="attach1">Anexar Arquivo</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Enviar" class="nice medium radius black button" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+        </div>
+        <script src="resources/javascripts/jquery.min.js"></script>
+        <script src="resources/javascripts/foundation.js"></script>
+        <script src="resources/javascripts/app.js"></script>
+    </body>
+</html>

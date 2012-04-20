@@ -1,0 +1,14 @@
+#sectional .section {
+	width: 820px;
+}
+
+#sectional .section h3 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100px;	
+}
+
+#sectional #projects.section .wrap {
+	padding-top: 0;
+}

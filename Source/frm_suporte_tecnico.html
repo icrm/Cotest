@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="IDiT Tecnologia" />
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+        <title>Contest - Consultoria</title>
+
+        <!-- Included CSS Files -->
+        <link rel="stylesheet" href="resources/stylesheets/foundation.css">
+        <link rel="stylesheet" href="resources/stylesheets/app.css">
+
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="resources/stylesheets/ie.css">
+        <![endif]-->
+
+        <script src="resources/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div id="container" class="general-background">
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns line-header-two">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns header default-background">
+                    <div class="eight columns">
+                        <a href="index.html"><img src="resources/images/cotest/logo-cotest.png" /></a>
+                    </div>
+                    <div class="four columns">
+                        <h1 class="tel">(11) 6810-7267</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns default-background default-border">
+                    <div class="eleven columns centered"><br />
+                        <h3 class="inner">Suporte T&eacute;cnico (Seguran&ccedil;a e Meio Ambiente)</h3>
+                        <p class="content inner"></p>
+                        <form method="post" action="mail_SuporteTecnico.php" id="contactForm" enctype="multipart/form-data" class="custom nice">
+                            <fieldset style="margin-bottom: 5px;">
+                                <h5>Dados</h5>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="nome">* Nome:</label>
+                                        <input type="text" name="nome" id="nome" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="empresa">* Empresa:</label>
+                                        <input type="text" name="empresa" id="empresa" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="six columns">
+                                        <label for="email">* E-mail:</label>
+                                        <input type="text" name="email" id="email" value="" class="input-text" style="width: 350px;" /><br />
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="fone">Telefone:</label>
+                                        <input type="text" name="fone" id="fone" value="" class="input-text" title="(__) ____-____" style="width: 140px;" /><br />
+                                        <span class="help">(ex.: (11) 1234-5678)</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 5px;">
+                                <h5>Acompanhamento</h5>
+                                <div class="formRow">
+                                    <div>
+                                        <label for="acompObraServ">
+                                            <input type="checkbox" name="acompObraServ" id="acompObraServ" value="Sim" style="display: none;"/>
+                                            <span class="custom checkbox"></span>&nbsp;(Obra / Servi&ccedil;o)
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="acompOutros">Descreva:</label>
+                                        <input type="text" name="acompOutros" id="acompOutros" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div>
+                                        <input type="file" name="attach1" id="attach1" class="input-text" style="width: 350px;"/>
+                                        <label for="attach1">Anexar Arquivo</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 5px;">
+                                <h5>Inspe&ccedil;&atilde;o / Vistoria</h5>
+                                <div class="formRow">
+                                    <div>
+                                        <label for="inspVistoria">
+                                            <input type="checkbox" name="inspVistoria" id="inspVistoria" value="Sim" style="display: none;"/>
+                                        <span class="custom checkbox"></span>&nbsp;Inspe&ccedil;&atilde;o / Vistoria
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="inspOutros">Descreva:</label>
+                                        <input type="text" name="inspOutros" id="inspOutros" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div>
+                                        <input type="file" name="attach2" id="attach2" class="input-text" style="width: 350px;"/>
+                                        <label for="attach2">Anexar Arquivo</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 5px;">
+                                <h5>Seguran&ccedil;a</h5>
+                                <div class="formRow">
+                                    <div>
+                                        <label for="segCheck">
+                                            <input type="checkbox" name="segCheck" id="segCheck" value="Sim" style="display: none;"/>
+                                            <span class="custom checkbox"></span>&nbsp;Seguran&ccedil;a
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="segOutros">Descreva:</label>
+                                        <input type="text" name="segOutros" id="segOutros" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div>
+                                        <input type="file" name="attach3" id="attach3" class="input-text" style="width: 350px;"/>
+                                        <label for="attach3">Anexar Arquivo</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 5px;">
+                                <h5>Meio Ambiente</h5>
+                                <div class="formRow">
+                                    <div>
+                                        <label for="meioAmbCheck">
+                                            <input type="checkbox" name="meioAmbCheck" id="meioAmbCheck" value="Sim" style="display: none;"/>
+                                            <span class="custom checkbox"></span>&nbsp;Meio Ambiente
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="meioOutros">Descreva:</label>
+                                        <input type="text" name="meioOutros" id="meioOutros" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div>
+                                        <input type="file" name="attach4" id="attach4" class="input-text" style="width: 350px;"/>
+                                        <label for="attach4">Anexar Arquivo</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Licen&ccedil;a Ambiental</h5>
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Licen&ccedil;a Ambiental</label>
+                                        </span>
+                                        <label for="lalp">
+                                            <input type="radio" name="licenca_ambiental" id="lalp" value="LP" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;LP
+                                        </label>
+                                        <label for="lali">
+                                            <input type="radio" name="licenca_ambiental" id="lali" value="LI" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;LI
+                                        </label>
+                                        <label for="lalo">
+                                            <input type="radio" name="licenca_ambiental" id="lalo" value="LO" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;LO
+                                        </label>
+
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div>
+                                        <label for="laOutros">Descreva:</label>
+                                        <input type="text" name="laOutros" id="laOutros" value="" class="input-text" style="width: 350px;" />
+                                    </div>
+                                    <div>
+                                        <input type="file" name="attach5" id="attach5" class="input-text" style="width: 350px;"/>
+                                        <label for="attach5">Anexar Arquivo</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Enviar" class="nice medium black radius button" />
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+        </div>
+        <script src="resources/javascripts/jquery.min.js"></script>
+        <script src="resources/javascripts/foundation.js"></script>
+        <script src="resources/javascripts/app.js"></script>
+    </body>    
+</html>

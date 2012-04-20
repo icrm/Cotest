@@ -1,0 +1,125 @@
+/* -----------------------------------------
+   Abas
+----------------------------------------- */
+.valores {
+    background-repeat: no-repeat;
+    background-position: -12px 0px;
+}
+
+.objetivos {
+    background: url(../images/cotest/aba-objetivos.png);
+    background-repeat: no-repeat;
+    text-indent: -999px;
+}
+
+.equipe {
+    background: url(../images/cotest/aba-equipe.png);
+    background-repeat: no-repeat;
+    text-indent: -999px;
+}
+
+.section-first { background-color: #2062a4; }
+.section-second { background-color: #124a91; }
+.section-third { background-color: #0c3d85; }
+
+#header {
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 170px;
+}
+
+#sectional {
+    width: 620px;
+    padding: 10px 50px 0 50px;
+}
+
+#sectional .section {
+    float: left;
+    position: relative;
+}
+
+#sectional .section .wrap { padding: 65px 70px 0; }
+
+#sectional .section h3 {
+    position: relative;
+    width: 50px;
+    margin: 0;
+    z-index: 100;
+}
+
+#sectional .section {
+    width: 50px;
+}
+
+#sectional .section h3 {
+    height: 100%;
+}
+
+#sectional,
+#sectional .section {
+    height: 28em;
+    overflow: hidden;
+}
+
+#sectional .section .wrap {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 470px;
+    height: 28em;
+    padding: 65px 70px 0 0;
+    z-index: 1;
+}
+
+.services.section.second {
+    margin-left: -11px;
+}
+.services.section.third {
+    margin-left: -12px;
+}
+
+#sectional .section h3 { cursor: pointer; }
+
+#sectional #projects.section h3:hover,
+#sectional #projects.current h3 {background-position: right top; }
+
+#sectional #services.section h3:hover,
+#sectional #services.current h3 {background-position: right top; }
+
+#sectional #clients.section h3:hover,
+#sectional #clients.current h3 {background-position: right top; }
+
+#sectional #about.section h3:hover,
+#sectional #about.current h3 {background-position: right top; }
+
+#sectional .services.first { /* Sets open tab. */
+    width: 500px;
+    overflow: hidden;
+}
+
+#sectional #projects.section .wrap,
+#sectional #services.section .wrap {
+    width: 600px;
+    left: 18px;
+    padding-right: 0;
+}
+
+.services li {
+    margin: 0;
+    padding: 0 1.3em 0 1.3em;
+    cursor: pointer;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    line-height: normal;
+    vertical-align: bottom !important;
+}
+
+.services li.last {
+    width: 156px;
+    text-align: right;
+}
+
+.services li.current {
+    font-weight: bold;
+    color: #ff7800;
+}

@@ -1,0 +1,156 @@
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Header
+:: Backgrounds
+:: Borders
+:: Menu
+:: Forms
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body {
+    font-family: 'Myriad Pro' !important;
+}
+
+.img-left {}
+.img-right { margin-left: 90px;}
+.top-margin { margin-top: 30px; }
+
+h2 {
+    color: #ffffff;
+    font-size: 1.9em;
+    font-style: italic;
+}
+
+h5 {
+    color: #585858 !important;
+    font-weight: bold;
+}
+
+ul.sec-content li {
+    color: #ffffff;
+    font-size: 1.0em;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ul.sec-content li span { font-size: 0.8em; }
+
+
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+.line-header,
+.line-header-two,
+.header {
+    border: 1px solid #a4a4a4;
+    border-top: none;
+}
+
+.line-header {
+    background: #005b9a;
+    height: 25px;
+}
+
+.line-header-two {
+    background: #dedede;
+    height: 10px;
+}
+
+.header {
+    height: 145px;
+}
+
+.header img {
+    margin: 20px 30px;
+}
+
+h1.tel {
+    color: #005b9a;
+    font-size: 2.5em;
+    font-style: italic;
+    margin: 50px 0;
+}
+
+
+
+
+/* -----------------------------------------
+   Backgrounds
+----------------------------------------- */
+.default-background { background: #e6e6e6; }
+.general-background {
+    background: #ffffff; /* Old browsers */
+    background: -webkit-linear-gradient(top,  #ededed 0%,#ffffff 50%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background:    -moz-linear-gradient(top,  #ededed 0%, #ffffff 50%, #ffffff 100%); /* FF3.6+ */
+    background:     -ms-linear-gradient(top,  #ededed 0%,#ffffff 50%,#ffffff 100%); /* IE10+ */
+    background:      -o-linear-gradient(top,  #ededed 0%,#ffffff 50%,#ffffff 100%); /* Opera 11.10+ */
+    background:         linear-gradient(top,  #ededed 0%,#ffffff 50%,#ffffff 100%); /* W3C */
+    background:        -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(50%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+}
+
+
+
+
+
+
+
+/* -----------------------------------------
+   Borders
+----------------------------------------- */
+.default-border {
+    border: 1px solid #a4a4a4;
+    border-top: none;
+}
+
+.side-border {
+    border: 1px solid #a4a4a4;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+
+
+
+
+/* -----------------------------------------
+   Menu
+----------------------------------------- */
+.menu {
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+.menu li {
+    margin-bottom: 15px;
+}
+
+.menu img {
+    margin-bottom: -5px;
+}
+
+.menu a {
+    color: #585858;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 10px;
+}
+
+
+
+
+
+/* -----------------------------------------
+   Froms
+----------------------------------------- */
+fieldset {
+    margin: 100px;
+}

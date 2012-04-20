@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="IDiT Tecnologia" />
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+        <title>Contest - Consultoria</title>
+
+        <!-- Included CSS Files -->
+        <link rel="stylesheet" href="resources/stylesheets/foundation.css">
+        <link rel="stylesheet" href="resources/stylesheets/app.css">
+
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="resources/stylesheets/ie.css">
+        <![endif]-->
+
+        <script src="resources/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div id="container" class="general-background">
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns line-header-two">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns header default-background">
+                    <div class="eight columns">
+                        <a href="index.html"><img src="resources/images/cotest/logo-cotest.png" /></a>
+                    </div>
+                    <div class="four columns">
+                        <h1 class="tel">(11) 6810-7267</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns default-background default-border">
+                    <div class="eleven columns centered"><br />
+                        <h4>An&aacute;lise de Riscos (estudo) - Norma P4.261 / 2003 Cetesb</h4>
+                        <p class="content inner">
+                        </p>
+                        <form method="post" class="nice custom" action="mail_AnaliseRiscos.php" id="contactForm" enctype="multipart/form-data">
+                            <fieldset>
+                                <h5>Dados</h5>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="nome">* Nome:</label>
+                                        <input type="text" name="nome" id="nome" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="empresa">* Empresa:</label>
+                                        <input type="text" name="empresa" id="empresa" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="email">* E-mail:</label>
+                                        <input type="text" name="email" id="email" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="fone">Telefone:</label>
+                                        <input type="text" name="fone" id="fone" value="" title="(__) ____-____" class="input-text"/>
+                                        <span class="help">(ex.: (11) 1234-5678)</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <h5>Análise de Riscos</h5>
+
+                                <div class="formRow">
+                                    <div>
+                                        Desenhos / Plantas (Dispon&iacute;veis):
+                                        <label for="aarpsim">
+                                            <input type="radio" name="aarp" id="aarpsim" value="Sim" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Sim
+                                        </label>
+                                        <label for="aarpnao">
+                                            <input type="radio" name="aarp" id="aarpnao" value="N&atilde;o" style="display: none;"/>
+                                            <span class="custom radio"></span> N&atilde;o
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Área Total (m2): </label>
+                                        <input type="text" name="area_total_ar" id="area_total_ar" value="" style="width: 140px;" class="input-text"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Dist&acirc;ncia Popula&ccedil;&atilde;o (externa): </label>
+                                        <input type="text" name="dist_pop_ar" id="dist_pop_ar" value="" style="width: 350px;" class="input-text"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Produto Inflam&aacute;vel (principal): </label>
+                                        <input type="text" name="prod_infl_ar" id="prod_infl_ar" value="" style="width: 350px;" class="input-text"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Produto T&oacute;xico (principal): </label>
+                                        <input type="text" name="prod_tox_ar" id="prod_tox_ar" value="" style="width: 350px;" class="input-text"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach1" id="attach1" class="input-text" style="width: 350px;"/>
+                                        <label for="attach1"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Enviar" class="nice medium radius black button" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+        </div>
+        <script src="resources/javascripts/jquery.min.js"></script>
+        <script src="resources/javascripts/foundation.js"></script>
+        <script src="resources/javascripts/app.js"></script>
+    </body>
+</html>

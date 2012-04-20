@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" dir="ltr" lang="pt-BR">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" dir="ltr" lang="pt-BR">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" dir="ltr" lang="pt-BR">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html dir="ltr" lang="pt-BR">
-    <!--<![endif]-->
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
     <head>
-        <meta charset="UTF-8"/>        
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="IDiT Tecnologia" />
         <link href="favicon.ico" type="image/x-icon" rel="icon" />
         <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
-        <link rel="profile" href="http://microformats.org/profile/hcard" />
-        <meta name="author" content="IDiT Tecnologia" />
-        <meta name="keywords" content=""/>
-        <meta name="description" content=""/>
 
         <title>Contest - Consultoria</title>
 
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
-        <link href="css/site.css" rel="stylesheet" type="text/css" />
+        <!-- Included CSS Files -->
+        <link rel="stylesheet" href="resources/stylesheets/foundation.css">
+        <link rel="stylesheet" href="resources/stylesheets/app.css">
+
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="resources/stylesheets/ie.css">
+        <![endif]-->
+
+        <script src="resources/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+
+        <!--
+                <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        -->
         <link href="css/shadowbox.css" rel="stylesheet" type="text/css" />
         <link href="css/noscript.css" rel="stylesheet" type="text/css" />
+
         <!--<link rel="stylesheet" type="text/css" href="css/styles.css" />-->
         <script type="text/javascript">
             document.write('<'+'link  href="css/sectional.css" rel="stylesheet" type="text/css" />');
         </script>
-
         <script type="text/javascript" src="js/mootools.js"></script>
         <script type="text/javascript" src="js/sliding-tabs.js"></script>
         <script type="text/javascript" src="js/shadowbox-mootools.js"></script>
@@ -39,81 +46,137 @@
         <script type="text/javascript" src="js/site.js"></script>
     </head>
     <body>
-        <div id="container" class="fullwidth">
-            <div id="header" class="intro">
-                <div id="logo" class="one_fourth">
-                    <h1>COTEST <span>CONSULTORIA</span></h1>
-                </div>
-                <div class="three_fourth last" style="text-align: right;">
-                    <h1 style="margin-top: 60px;">(11) 6810-7267</h1>
-                </div>
-            </div>
-            <div id="content" class="fullwidth">
-                <div class="two_fourth">
-                    <div style="margin-left: 100px;">
-                        <p><a href="./AnaliseRiscos.html"><img src="image/icn-mail-2.png" style="margin-bottom: -12px;margin-right: 5px;" />Análise de Riscos (Estudo)</a></p>
-                        <p><a href="./AvaliacaoAmbiental.html"><img src="image/icn-mail-2.png" style="margin-bottom: -12px;margin-right: 5px;" />Avaliações Ambientais</a></p>
-                        <p><a href="./AvaliacaoOcupacional.html"><img src="image/icn-mail-2.png" style="margin-bottom: -12px;margin-right: 5px;" />Avaliações Ocupacionais</a></p>
-                        <p><a href="./Laudos.html"><img src="image/icn-mail-2.png" style="margin-bottom: -12px;margin-right: 5px;" />Laudos</a></p>
-                        <p><a href="./HigienePrevencao.html"><img src="image/icn-mail-2.png" style="margin-bottom: -12px;margin-right: 5px;" />Programas de Higiene e Prevenção</a></p>
-                        <p><a href="./SuporteTecnico.html"><img src="image/icn-mail-2.png" style="margin-bottom: -12px;margin-right: 5px;" />Suporte Técnico (Segurança e Meio Ambiente)</a></p>
-                        <p><a href="./TreinamentoPalestra.html"><img src="image/icn-mail-2.png" style="margin-bottom: -12px;margin-right: 5px;" />Treinamento e Palestras</a></p>
-                    </div>
-                </div>
-                <div class="two_fourth last" style="text-align: right;"><img src="image/img-cotest-1.png" style="width: 200px;" /></div>
-                <div class="one_fourth" style="text-align: right;"><img src="image/img-cotest-5.png" style="width: 200px; height: 150px;" /></div>
-                <div class="one_fourth last" style="text-align: right;"><img src="image/img-cotest-3.jpg" style="width: 200px; height: 150px;" /></div>
-            </div>
-            <div id="sectional" class="fullwidth">
-                <div class="services section first">
-                    <h3>Valores</h3>
-                    <h4 style="width: 30px; font-size: 3.0em; text-align: center; padding: 5px;">V A L O R E S</h4>
-                    <div class="wrap">
-                        <div style="margin-left: 60px;">
-                            <h2>A Cotest tem como valores:</h2>
-                            <ol style="list-style: decimal;">
-                                <li>A saúde e a segurança de seus Colaboradores e Clientes.</li>
-                                <li>A busca pela excelência dos resultados junto aos ses Clientes.</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
+        <div id="container" class="general-background">
 
-                <div class="services section second">
-                    <h3>Objetivos</h3>
-                    <h4 style="width: 30px; font-size: 3.0em; text-align: center; padding: 5px;">O B J E T I V O S</h4>
-                    <div class="wrap">
-                        <div style="margin-left: 60px;">
-                            <h2>A Cotest tem como objetivos:</h2>
-                            <ol style="list-style: decimal;">
-                                <li>Atender rápido e satisfatoriamente seus Clientes.</li>
-                                <li>Prestar serviços de qualidade com menor preço.</li>
-                            </ol>
-                        </div>
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns line-header-two">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns header default-background">
+                    <div class="eight columns">
+                        <a href="index.html"><img src="resources/images/cotest/logo-cotest.png" /></a>
+                    </div>
+                    <div class="four columns">
+                        <h1 class="tel">(11) 6810-7267</h1>
                     </div>
                 </div>
+            </div>
 
-                <div class="services section third">
-                    <h3>Equipe</h3>
-                    <h4 style="width: 30px; font-size: 3.0em; text-align: center; padding: 5px;">E Q U I P E</h4>
-                    <div class="wrap">
-                        <div style="margin-left: 60px;">
-                            <h2>A Cotest conta com os seguintes colaboradores:</h2>
-                            <ol style="list-style: decimal;">
-                                <li>Engenheiros (Segurança, Mecânico, Químico)</li>
-                                <li>Pós-Graduando (Engenharia Ambiental)</li>
-                                <li>Gestor (Ambiental)</li>
-                                <li>Técnicos (Meio Ambiente e Segurança do Trabalho)</li>
-                            </ol>
+            <div class="row">
+                <div class="twelve columns default-background side-border">
+                    <div class="seven columns top-margin">
+                        <ul class="menu">
+                            <li><img src="resources/images/cotest/envelope.png" /><a href="frm_analise_risco.html">Análise de Riscos <span>(Estudo)</span></a></li>
+                            <li><img src="resources/images/cotest/envelope.png" /><a href="#">Avaliações Ambientais</a></li>
+                            <li><img src="resources/images/cotest/envelope.png" /><a href="#">Avaliações Ocupacionais</a></li>
+                            <li><img src="resources/images/cotest/envelope.png" /><a href="#">Laudos</a></li>
+                            <li><img src="resources/images/cotest/envelope.png" /><a href="#">Programas de Higiene e Prevenção</a></li>
+                            <li><img src="resources/images/cotest/envelope.png" /><a href="frm_suporte_tecnico.html">Suporte Técnico <span>(Segurança e Meio Ambiente)</span></a></li>
+                            <li><img src="resources/images/cotest/envelope.png" /><a href="frm_treinamento_palestra.html">Treinamentos e Palestras</a></li>
+                        </ul>
+                    </div>
+                    <div class="five columns top-margin">
+                        <img src="resources/images/cotest/img-um.png" class="img-left" />
+                        <img src="resources/images/cotest/img-dois.png" class="img-right" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="twelve columns default-background default-border" style="padding-bottom: 30px; padding-top: 30px;">
+                    <div class="twelve columns">
+                        <div class="eight columns">
+                            <div id="sectional">
+                                <div class="services section first">
+                                    <h3 style="z-index: 3;"><img src="resources/images/cotest/aba-valores.png" /></h3>
+                                    <div class="wrap section-first">
+                                        <div style="margin-left: 60px;">
+                                            <h2>A Cotest tem como valores:</h2><br />
+                                            <ul class="sec-content">
+                                                <li>A saúde e a segurança de seus Colaboradores e Clientes.</li>
+                                                <li>A busca pela excelência dos resultados junto aos ses Clientes.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="services section second">
+                                    <h3 style="z-index: 2;"><img src="resources/images/cotest/aba-objetivos.png" /></h3>
+                                    <div class="wrap section-second">
+                                        <div style="margin-left: 60px;">
+                                            <h2>A Cotest tem como objetivos:</h2><br />
+                                            <ul class="sec-content">
+                                                <li>Atender rápido e satisfatoriamente seus Clientes.</li>
+                                                <li>Prestar serviços de qualidade com menor preço.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="services section third">
+                                    <h3 style="z-index: 1;"><img src="resources/images/cotest/aba-equipe.png" /></h3>
+                                    <div class="wrap section-third" style="z-index: 0">
+                                        <div style="margin-left: 50px;">
+                                            <h2>A Cotest conta com os<br /> seguintes colaboradores:</h2><br />
+                                            <ul class="sec-content">
+                                                <li>
+                                                    Engenheiros<br />
+                                                    <span>(Segurança, Mecânico, Químico)</span>
+                                                </li>
+                                                <li>
+                                                    Pós-Graduando<br />
+                                                    <span>(Engenharia Ambiental)<br />
+                                                        Gestor (Ambiental)</span>
+                                                </li>
+                                                <li>
+                                                    Técnicos<br />
+                                                    <span>(Meio Ambiente e Segurança do Trabalho)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four columns" style="margin-top: 100px;">
+                            <div style="margin-bottom: 20px;">
+                                <img src="resources/images/cotest/icn-flag.png" style="float: left;"/>
+                                <div style="width: 200px; float: right; margin-right: 50px;">
+                                    <h5>Cotest Consultoria Técnica de Segurança do Trabalho Ltda.</h5>
+                                    <p style="font-size: 1.1em; margin-top: 10px;">CNPJ 11.314.130/0001 – 15</p>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <img src="resources/images/cotest/icn-home.png" style="float: left;"/>
+                                <div style="width: 200px; float: right; margin-right: 50px;">
+                                    <p style="font-size: 1.1em; margin: 0px;">Rua Bandeirantes, 450 – Sala 04</p>
+                                    <p style="font-size: 1.1em; margin: 0px;">Vila Conceição – Diadema – SP</p>
+                                    <p style="font-size: 1.1em; margin: 0px;">CEP: 09912 – 230</p>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <img src="resources/images/cotest/icn-tel.png" style="float: left;" />
+                                <div style="width: 200px; float: right; margin-right: 50px; ">
+                                    <p style="margin-top: 7px; font-size: 1.3em; ">(11) 6810-7267</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="footer">
-                <p style="margin-bottom: 0;">Cotest Consultoria Técnica de Segurança do Trabalho Ltda.</p>
-                <p style="margin-bottom: 0;">CNPJ 11.314.130/0001 – 15</p>
-                <p style="margin-bottom: 0;">Rua Bandeirantes, 450  – Sala 04 – Vila Conceição – Diadema – SP – CEP 09912 – 230</p>
-                <p style="margin-bottom: 0;">Fone: (11) 6810-7267</p>
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
             </div>
         </div>
         <script type="text/javascript">
