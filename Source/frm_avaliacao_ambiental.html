@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <meta name="author" content="IDiT Tecnologia" />
+
+        <title>Contato - Avalia&ccedil;&atilde;o Ambiental | Cotest Consultoria</title>
+
+        <!-- Included CSS Files -->
+        <link rel="stylesheet" href="resources/stylesheets/foundation.css">
+        <link rel="stylesheet" href="resources/stylesheets/app.css">
+
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="resources/stylesheets/ie.css">
+        <![endif]-->
+
+        <script src="resources/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div id="container" class="general-background">
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns line-header-two">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns header default-background">
+                    <div class="eight columns">
+                        <a href="index.html"><img src="resources/images/cotest/logo-cotest.png" /></a>
+                    </div>
+                    <div class="four columns">
+                        <h1 class="tel">(11) 6810-7267</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns default-background default-border">
+                    <div class="eleven columns centered"><br />
+                        <h3 class="inner">Avalia&ccedil;&atilde;o Ambiental</h3>
+                        <p class="content inner">
+                        </p>
+                        <form method="post" action="mail_AvaliacaoAmbiental.php" id="contactForm" enctype="multipart/form-data" class="nice custom">
+                            <fieldset style="margin-bottom: 5px;">
+                                <h5>Dados</h5>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="nome">* Nome:</label>
+                                        <input type="text" name="nome" id="nome" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="empresa">* Empresa:</label>
+                                        <input type="text" name="empresa" id="empresa" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="six columns">
+                                        <label for="email">* E-mail:</label>
+                                        <input type="text" name="email" id="email" value="" class="input-text" style="width: 350px;" /><br />
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="fone">Telefone:</label>
+                                        <input type="text" name="fone" id="fone" value="" class="input-text" title="(__) ____-____" style="width: 140px;" />
+                                        <span class="help">(ex.: (11) 1234-5678)</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Avalia&ccedil;&atilde;o Ambiental de Ru&iacute;do Perimetral (externo) / ABNT NBR 10.151</h5><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Desenhos / Plantas (Dispon&iacute;veis): </label>
+                                        <label for="aarpsim">
+                                            <input type="radio" name="aarp" id="aarpsim" value="Sim" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Sim
+                                        </label>
+                                        <label for="aarpnao">
+                                            <input type="radio" name="aarp" id="aarpnao" value="N&atilde;o" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;N&atilde;o
+                                        </label>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Área Total (m2): </label>
+                                        <input type="text" name="subs1" id="subs1" value="" style="width: 140px;" class="input-text"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach1" id="attach1"  class="input-text" style="width: 350px;"/>
+                                        <label for="attach1"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Avalia&ccedil;&atilde;o Ambiental de Fontes Fixas (chamin&eacute;s)</h5><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Desenhos / Plantas (Dispon&iacute;veis): </label>
+                                        <label for="aaffsim">
+                                            <input type="radio" name="aaff" id="aaffsim" value="Sim" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Sim
+                                        </label>
+                                        <label for="aaffnao">
+                                            <input type="radio" name="aaff" id="aaffnao" value="N&atilde;o" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;N&atilde;o
+                                        </label>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Total de Chamin&eacute;s: </label>
+                                        <input type="text" name="tottchamines" id="tottchamines" value="" style="width: 140px;" class="input-text"/>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Total de Amostras</label>
+                                        </span>
+                                        <label for="totaffmp" style="display: inline; margin: 5px;">MP: </label>
+                                        <input type="text" name="totaffmp" id="totaffmp" value="" style="width: 80px; display: inline;" class="input-text"/>
+                                        <label for="totaffsox" style="display: inline; margin: 5px;">SOX: </label>
+                                        <input type="text" name="totaffsox" id="totaffsox" value="" style="width: 80px; display: inline;" class="input-text"/>
+                                        <label for="totaffnox" style="display: inline; margin: 5px;">NOX: </label>
+                                        <input type="text" name="totaffnox" id="totaffnox" value="" style="width: 80px; display: inline;" class="input-text"/>
+                                        <label for="totaffvoc" style="display: inline; margin: 5px;">VOC: </label>
+                                        <input type="text" name="totaffvoc" id="totaffvoc" value="" style="width: 80px; display: inline;" class="input-text"/>
+                                        <label for="totaffsvo" style="display: inline; margin: 5px;">SVO: </label>
+                                        <input type="text" name="totaffsvo" id="totaffsvo" value="" style="width: 80px; display: inline;" class="input-text"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <label for="totaffch4" style="display: inline; margin: 5px;">CH4: </label>
+                                        <input type="text" name="totaffch4" id="totaffch4" value="" style="width: 80px; display: inline;" class="input-text"/>
+                                        <label for="totaffcoc" style="display: inline; margin: 5px;">Compostos Organo Clorados: </label>
+                                        <input type="text" name="totaffcoc" id="totaffcoc" value="" style="width: 80px; display: inline;" class="input-text"/>
+                                        <label for="totaffdfu" style="display: inline; margin: 5px;">Dioxina / Furano: </label>
+                                        <input type="text" name="totaffdfu" id="totaffdfu" value="" style="width: 80px; display: inline;" class="input-text"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <label for="totaffamo">Am&ocirc;nia: </label>
+                                        <input type="text" name="totaffamo" id="totaffamo" value="" style="width: 80px;" class="input-text"/>
+                                        <label for="totaffout">Outros: </label>
+                                        <input type="text" name="totaffout" id="totaffout" value="" style="width: 400px;" class="input-text"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach2" id="attach2" class="input-text" style="width: 350px;"/>
+                                        <label for="attach2"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Avalia&ccedil;&atilde;o Ambiental (material particulado) em Grandes Demoli&ccedil;&otilde;es</h5>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Desenhos / Plantas (dispon&iacute;veis): </label>
+                                        <label for="aagdsim">
+                                            <input type="radio" name="aagd" id="aagdsim" value="Sim" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Sim
+                                        </label>
+                                        <label for="aagdnao">
+                                            <input type="radio" name="aagd" id="aagdnao" value="N&atilde;o" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;N&atilde;o
+                                        </label>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Total de Amostras</label>
+                                        </span>
+                                        <span style="width: 160px;">
+                                            <label for="totagm">MP: </label>
+                                            <input type="text" name="totagm" id="totagm" value="" style="width: 140px;" class="input-text"/>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label for="aadpAnexar">
+                                            <input type="checkbox" name="aadpAnexar" id="aadpAnexar" value=""/>
+                                            <span class="custom checkbox"></span>&nbsp;Arquivo (Anexar)
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Enviar" class="nice medium black radius button" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+        </div>
+        <script src="resources/javascripts/jquery.min.js"></script>
+        <script src="resources/javascripts/foundation.js"></script>
+        <script src="resources/javascripts/app.js"></script>
+    </body>    
+</html>

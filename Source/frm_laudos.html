@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="IDiT Tecnologia" />
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <meta name="author" content="IDiT Tecnologia" />
+
+        <title>Contato - Laudos | Cotest Consultoria</title>
+
+        <!-- Included CSS Files -->
+        <link rel="stylesheet" href="resources/stylesheets/foundation.css">
+        <link rel="stylesheet" href="resources/stylesheets/app.css">
+
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="resources/stylesheets/ie.css">
+        <![endif]-->
+
+        <script src="resources/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div id="container" class="general-background">
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns line-header-two">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns header default-background">
+                    <div class="eight columns">
+                        <a href="index.html"><img src="resources/images/cotest/logo-cotest.png" /></a>
+                    </div>
+                    <div class="four columns">
+                        <h1 class="tel">(11) 6810-7267</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns default-background default-border">
+                    <div class="eleven columns centered"><br />
+                        <form method="post" action="mail_Laudos.php" id="contactForm" enctype="multipart/form-data" class="nice custom">
+                            <fieldset style="margin-bottom: 5px;">
+                                <h5>Dados</h5>
+
+                                <div id="messages"></div>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="nome">* Nome:</label>
+                                        <input type="text" name="nome" id="nome" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="empresa">* Empresa:</label>
+                                        <input type="text" name="empresa" id="empresa" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="email">* E-mail:</label>
+                                        <input type="text" name="email" id="email" value="" class="input-text" style="width: 350px;" /><br />
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="fone">Telefone:</label>
+                                        <input type="text" name="fone" id="fone" value="" title="(__) ____-____" style="width: 140px;"  class="input-text" />
+                                        <span class="help">(ex.: (11) 1234-5678)</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Insalubridade</h5>
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Agente Qu&iacute;mico</label>
+                                        </span>
+                                        <label for="poeira">
+                                            <input type="radio" name="agente_quimico" id="poeira" value="Poeira" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Poeira
+                                        </label>
+
+                                        <label for="gases">
+                                            <input type="radio" name="agente_quimico" id="gases" value="Gases / Vapores" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Gases / Vapores
+                                        </label>
+                                        <label for="aqoutros">Outros:</label>
+                                        <input type="text" name="aqoutros" id="aqoutros" value="" class="input-text" style="width: 350px;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Subst&acirc;ncia</label>
+                                        </span>
+                                        <label for="subs1" style="display: inline; margin: 5px;">1</label>
+                                        <input type="text" name="subs1" id="subs1" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="subs2" style="display: inline; margin: 5px;">2</label>
+                                        <input type="text" name="subs2" id="subs2" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="subs3" style="display: inline; margin: 5px;">3</label>
+                                        <input type="text" name="subs3" id="subs3" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="subs4" style="display: inline; margin: 5px;">4</label>
+                                        <input type="text" name="subs4" id="subs4" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Fun&ccedil;&otilde;es</label>
+                                        </span>
+                                        <label for="qfunc1" style="display: inline; margin: 5px;">1</label>
+                                        <input type="text" name="qfunc1" id="qfunc1" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="qfunc2" style="display: inline; margin: 5px;">2</label>
+                                        <input type="text" name="qfunc2" id="qfunc2" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="qfunc3" style="display: inline; margin: 5px;">3</label>
+                                        <input type="text" name="qfunc3" id="qfunc3" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="qfunc4" style="display: inline; margin: 5px;">4</label>
+                                        <input type="text" name="qfunc4" id="qfunc4" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Total de Trabalhadores</label>
+                                        </span>
+                                        <label for="qtott1" style="display: inline; margin: 5px;">1</label>
+                                        <input type="text" name="qtott1" id="qtott1" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="qtott2" style="display: inline; margin: 5px;">2</label>
+                                        <input type="text" name="qtott2" id="qtott2" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="qtott3" style="display: inline; margin: 5px;">3</label>
+                                        <input type="text" name="qtott3" id="qtott3" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="qtott4" style="display: inline; margin: 5px;">4</label>
+                                        <input type="text" name="qtott4" id="qtott4" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach1" id="attach1" class="input-text" style="width: 350px;"/>
+                                        <label for="attach1"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Insalubridade</h5>
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Agente F&iacute;sico</label>
+                                        </span>
+                                        <label for="ruido">
+                                            <input type="radio" name="agente_fisico" id="ruido" value="Ru&iacute;do" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Ru&iacute;do
+                                        </label>
+                                        <label for="calor">
+                                            <input type="radio" name="agente_fisico" id="calor" value="Calor" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Calor
+                                        </label><br />
+                                        <label for="afoutros">Outros:</label>
+                                        <input type="text" name="afoutros" id="afoutros" value="" class="input-text" style="width: 350px;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Fun&ccedil;&otilde;es</label>
+                                        </span>
+                                        <label for="ffunc1" style="display: inline; margin: 5px;">1</label>
+                                        <input type="text" name="ffunc1" id="ffunc1" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="ffunc2" style="display: inline; margin: 5px;">2</label>
+                                        <input type="text" name="ffunc2" id="ffunc2" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="ffunc3" style="display: inline; margin: 5px;">3</label>
+                                        <input type="text" name="ffunc3" id="ffunc3" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="ffunc4" style="display: inline; margin: 5px;">4</label>
+                                        <input type="text" name="ffunc4" id="ffunc4" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Total de Trabalhadores</label>
+                                        </span>
+                                        <label for="ftott1" style="display: inline; margin: 5px;">1</label>
+                                        <input type="text" name="ftott1" id="ftott1" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="ftott2" style="display: inline; margin: 5px;">2</label>
+                                        <input type="text" name="ftott2" id="ftott2" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="ftott3" style="display: inline; margin: 5px;">3</label>
+                                        <input type="text" name="ftott3" id="ftott3" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="ftott4" style="display: inline; margin: 5px;">4</label>
+                                        <input type="text" name="ftott4" id="ftott4" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach2" id="attach2" class="input-text" style="width: 350px;"/>
+                                        <label for="attach2"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Periculosidade</h5>
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>&nbsp;</label>
+                                        </span>
+                                        <label for="explosivos">
+                                            <input type="radio" name="periculosidade" id="explosivos" value="Explosivos" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Explosivos
+                                        </label>
+                                        <label for="inflamaveis">
+                                            <input type="radio" name="periculosidade" id="inflamaveis" value="Inflam&aacute;veis" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Inflam&aacute;veis
+                                        </label>
+                                        <label for="eletricidade">
+                                            <input type="radio" name="periculosidade" id="eletricidade" value="Eletricidade" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Eletricidade
+                                        </label>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Fun&ccedil;&otilde;es</label>
+                                        </span>
+                                        <label for="pfunc1" style="display: inline; margin: 5px;">1</label>
+                                        <input type="text" name="pfunc1" id="pfunc1" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="pfunc2" style="display: inline; margin: 5px;">2</label>
+                                        <input type="text" name="pfunc2" id="pfunc2" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="pfunc3" style="display: inline; margin: 5px;">3</label>
+                                        <input type="text" name="pfunc3" id="pfunc3" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="pfunc4" style="display: inline; margin: 5px;">4</label>
+                                        <input type="text" name="pfunc4" id="pfunc4" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <span class="radio-label">
+                                            <label>Total de Trabalhadores</label>
+                                        </span>
+                                        <label for="ptott1" style="display: inline; margin: 5px;">1</label>
+                                        <input type="text" name="ptott1" id="ptott1" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="ptott2" style="display: inline; margin: 5px;">2</label>
+                                        <input type="text" name="ptott2" id="ptott2" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="ptott3" style="display: inline; margin: 5px;">3</label>
+                                        <input type="text" name="ptott3" id="ptott3" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <label for="ptott4" style="display: inline; margin: 5px;">4</label>
+                                        <input type="text" name="ptott4" id="ptott4" value="" class="input-text" style="width: 140px; display: inline;"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach3" id="attach3" class="input-text" style="width: 350px;"/>
+                                        <label for="attach3"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Enviar" class="nice medium black radius button" />
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+        </div>
+        <script src="resources/javascripts/jquery.min.js"></script>
+        <script src="resources/javascripts/foundation.js"></script>
+        <script src="resources/javascripts/app.js"></script>
+    </body>    
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="IDiT Tecnologia" />
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+        <title>Contato - Avalia&ccedil;&atilde;o Ocupacional | Cotest Consultoria</title>
+
+        <!-- Included CSS Files -->
+        <link rel="stylesheet" href="resources/stylesheets/foundation.css">
+        <link rel="stylesheet" href="resources/stylesheets/app.css">
+
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="resources/stylesheets/ie.css">
+        <![endif]-->
+
+        <script src="resources/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div id="container" class="general-background">
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns line-header-two">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns header default-background">
+                    <div class="eight columns">
+                        <a href="index.html"><img src="resources/images/cotest/logo-cotest.png" /></a>
+                    </div>
+                    <div class="four columns">
+                        <h1 class="tel">(11) 6810-7267</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns default-background default-border">
+                    <div class="eleven columns centered"><br />
+                        <h4>Avaliação Ocupacional</h4>
+                        <p class="content inner">
+                        </p>
+                        <form method="post" class="nice custom" action="mail_AvaliacaoOcupacional.php" id="contactForm" enctype="multipart/form-data">
+                            <fieldset>
+                                <h5>Dados</h5>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="nome">* Nome:</label>
+                                        <input type="text" name="nome" id="nome" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="empresa">* Empresa:</label>
+                                        <input type="text" name="empresa" id="empresa" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="email">* E-mail:</label>
+                                        <input type="text" name="email" id="email" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="fone">Telefone:</label>
+                                        <input type="text" name="fone" id="fone" value="" title="(__) ____-____" class="input-text"/>
+                                        <span class="help">(ex.: (11) 1234-5678)</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Agente Qu&iacute;mico</h5>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label for="poeira">
+                                            <input type="radio" name="agente_quimico" id="poeira" value="Poeira" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Poeira
+                                        </label>
+                                        <label for="gases">
+                                            <input type="radio" name="agente_quimico" id="gases" value="Gases / Vapores" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Gases / Vapores
+                                        </label>
+
+                                        <label for="aqoutros">Outros:</label>
+                                        <input type="text" name="aqoutros" id="aqoutros" value="" style="width: 255px;" class="input-text"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <span class="radio-label">
+                                        <label>Subst&acirc;ncia</label>
+                                    </span>
+                                    <div>
+                                        <label for="subs1" style="display: inline;">1</label>
+                                        <input type="text" name="subs1" id="subs1" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                        <label for="subs2" style="display: inline;">2</label>
+                                        <input type="text" name="subs2" id="subs2" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                        <label for="subs3" style="display: inline;">3</label>
+                                        <input type="text" name="subs3" id="subs3" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                        <label for="subs4" style="display: inline;">4</label>
+                                        <input type="text" name="subs4" id="subs4" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <span class="radio-label">
+                                        <label>Total de Amostras</label>
+                                    </span>
+                                    <div>
+                                        <label for="qtota1" style="display: inline;">1</label>
+                                        <input type="text" name="qtota1" id="qtota1" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                        <label for="qtota2" style="display: inline;">2</label>
+                                        <input type="text" name="qtota2" id="qtota2" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                        <label for="qtota3" style="display: inline;">3</label>
+                                        <input type="text" name="qtota3" id="qtota3" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                        <label for="qtota4" style="display: inline;">4</label>
+                                        <input type="text" name="qtota4" id="qtota4" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach1" id="attach1" class="input-text" style="width: 350px;"/>
+                                        <label for="attach1"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <h5>Agente F&iacute;sico</h5>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label for="ruido">
+                                            <input type="radio" name="agente_fisico" id="ruido" value="Ru&iacute;do" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Ru&iacute;do
+                                        </label>
+                                        <label for="calor">
+                                            <input type="radio" name="agente_fisico" id="calor" value="Calor" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;Calor
+                                        </label>
+
+                                        <label for="afoutros">Outros:</label>
+                                        <input type="text" name="afoutros" id="afoutros" value="" style="width: 255px;" class="input-text"/>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="formRow">
+                                    <span class="radio-label">
+                                        <label>Total de Amostras</label>
+                                    </span>
+                                    <div>
+                                        <label for="ftota1" style="display: inline;">1</label>
+                                        <input type="text" name="ftota1" id="ftota1" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                        <label for="ftota2" style="display: inline;">2</label>
+                                        <input type="text" name="ftota2" id="ftota2" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                        <label for="ftota3" style="display: inline;">3</label>
+                                        <input type="text" name="ftota3" id="ftota3" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                        <label for="ftota4" style="display: inline;">4</label>
+                                        <input type="text" name="ftota4" id="ftota4" value="" class="input-text" style="display: inline; width: 140px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach2" id="attach2" class="input-text" style="width: 350px;"/>
+                                        <label for="attach2"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Enviar" class="send-form" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+        </div>
+        <script src="resources/javascripts/jquery.min.js"></script>
+        <script src="resources/javascripts/foundation.js"></script>
+        <script src="resources/javascripts/app.js"></script>
+    </body>    
+</html>

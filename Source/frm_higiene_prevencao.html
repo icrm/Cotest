@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <meta name="author" content="IDiT Tecnologia" />
+
+        <title>Contato - Higiene e Preven&ccedil;&atilde;o | Cotest Consultoria</title>
+
+        <!-- Included CSS Files -->
+        <link rel="stylesheet" href="resources/stylesheets/foundation.css">
+        <link rel="stylesheet" href="resources/stylesheets/app.css">
+
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="resources/stylesheets/ie.css">
+        <![endif]-->
+
+        <script src="resources/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div id="container" class="general-background">
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns line-header-two">
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns header default-background">
+                    <div class="eight columns">
+                        <a href="index.html"><img src="resources/images/cotest/logo-cotest.png" /></a>
+                    </div>
+                    <div class="four columns">
+                        <h1 class="tel">(11) 6810-7267</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns default-background default-border">
+                    <div class="eleven columns centered"><br />
+                        <h3 class="inner">Programa de Higiene e Preven&ccedil;&atilde;o</h3>
+                        <p class="content inner">
+                        </p>
+                        <form method="post" action="mail_HigienePrevencao.php" id="contactForm" enctype="multipart/form-data" class="nice custom">
+                            <fieldset style="margin-bottom: 5px;">
+                                <h5>Dados</h5>
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="nome">* Nome:</label>
+                                        <input type="text" name="nome" id="nome" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="empresa">* Empresa:</label>
+                                        <input type="text" name="empresa" id="empresa" value="" class="input-text" style="width: 350px;"/>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="six columns">
+                                        <label for="email">* E-mail:</label>
+                                        <input type="text" name="email" id="email" value="" class="input-text" style="width: 350px;" /><br />
+                                    </div>
+                                    <div class="six columns">
+                                        <label for="fone">Telefone:</label>
+                                        <input type="text" name="fone" id="fone" value="" class="input-text" title="(__) ____-____" style="width: 140px;" />
+                                        <span class="help">(ex.: (11) 1234-5678)</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 10px;">
+                                <legend>Higiene e Preven&ccedil;&atilde;o</legend>
+                                <div class="formRow">
+                                    <div>
+                                        <label for="ppra">
+                                            <input type="radio" name="hig_prevencao" id="ppra" value="PPRA" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;PPRA
+                                        </label>
+                                        <label for="ppeob">
+                                            <input type="radio" name="hig_prevencao" id="ppeob" value="PPEOB" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;PPEOB
+                                        </label>
+                                        <label for="pca">
+                                            <input type="radio" name="hig_prevencao" id="pca" value="PCA" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;PCA
+                                        </label>
+                                        <label for="ppr">
+                                            <input type="radio" name="hig_prevencao" id="ppr" value="PPR" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;PPR
+                                        </label>
+                                        <label for="pcmat">
+                                            <input type="radio" name="hig_prevencao" id="pcmat" value="PCMAT" style="display: none;"/>
+                                            <span class="custom radio"></span>&nbsp;PCMAT
+                                        </label>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Outros</label>
+                                        <input type="text" name="higPrevOutros" id="higPrevOutros" value="" style="width: 600px;" class="input-text"/>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <label>Total de Trabalhadores</label>
+                                        <input type="text" name="ptott" id="ptott" value="" style="width: 150px;"/>
+                                    </div>
+                                </div><br />
+
+                                <div class="formRow">
+                                    <div>
+                                        <input type="file" name="attach1" id="attach1" class="input-text" style="width: 350px;"/>
+                                        <label for="attach1"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Enviar" class="send-form" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns line-header">
+                </div>
+            </div>
+        </div>
+        <script src="resources/javascripts/jquery.min.js"></script>
+        <script src="resources/javascripts/foundation.js"></script>
+        <script src="resources/javascripts/app.js"></script>
+    </body>    
+</html>
